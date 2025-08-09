@@ -1,5 +1,5 @@
 import React from 'react'
-import { MapPin, Clock, Car, ShoppingBag, GraduationCap, Hospital, Coffee } from 'lucide-react'
+import { MapPin, Clock, Car, ShoppingBag, GraduationCap, Italic as Hospital, Coffee } from 'lucide-react'
 
 const Location = () => {
   const nearbyPlaces = [
