@@ -4,16 +4,18 @@ import { Home, Bed, Bath, Square, Car, Calendar, DollarSign, Shield } from 'luci
 const PropertyDetails = () => {
   const details = [
     { icon: Bed, label: 'Bedrooms', value: '3' },
-    { icon: Bath, label: 'Bathrooms', value: '2' },
-    { icon: Square, label: 'Square Feet', value: '1,850' },
-    { icon: Car, label: 'Parking', value: '2 Car Garage' },
-    { icon: Calendar, label: 'Available', value: 'Immediately' },
+    { icon: Bath, label: 'Bathrooms', value: '1' },
+    { icon: Square, label: 'Square Feet', value: '1,224' },
+    { icon: Car, label: 'Parking', value: 'EV Charging' },
+    { icon: Calendar, label: 'Built', value: '1937' },
     { icon: Home, label: 'Property Type', value: 'Single Family' },
   ]
 
+  const rentAmount = import.meta.env.VITE_RENT_AMOUNT;
+
   const rentalInfo = [
-    { icon: DollarSign, label: 'Monthly Rent', value: '$2,200', highlight: true },
-    { icon: Shield, label: 'Security Deposit', value: '$2,200' },
+    { icon: DollarSign, label: 'Monthly Rent', value: `${rentAmount}`.replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,'), highlight: true },
+    { icon: Shield, label: 'Security Deposit', value: `${rentAmount}`.replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,') },
     { icon: Calendar, label: 'Lease Term', value: '12 months minimum' },
   ]
 
@@ -34,8 +36,8 @@ const PropertyDetails = () => {
           <div className="animate-scale-in">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="grape ave_files/3120907c42ea49a2fbe98522a16ba848-cc_ft_960.jpg"
-                alt="Property interior"
+                src="grape ave_files/bad489db1ae0ef74ae98eab77b60baba-cc_ft_960.jpg"
+                alt="Front of house"
                 className="w-full h-96 object-cover"
               />
               <div className="absolute top-4 left-4">

@@ -18,27 +18,27 @@ const Features = () => {
   const features = [
     {
       icon: Thermometer,
-      title: 'Central Air & Heat',
-      description: 'Climate controlled comfort year-round'
+      title: 'New Mini-Split',
+      description: 'Energy-efficient heating and cooling'
     },
     {
       icon: Car,
-      title: '2-Car Garage',
-      description: 'Secure parking with storage space'
+      title: 'EV Charging Station',
+      description: 'Dedicated EV charging available'
     },
     {
       icon: Utensils,
       title: 'Modern Kitchen',
-      description: 'Updated appliances and granite countertops'
+      description: 'Updated appliances and countertops'
     },
     {
       icon: Droplets,
       title: 'Updated Plumbing',
-      description: 'Recently renovated bathrooms'
+      description: 'Recently renovated bathroom'
     },
     {
       icon: Zap,
-      title: 'Updated Electrical',
+      title: 'New Electrical',
       description: 'Modern wiring and outlets throughout'
     },
     {
@@ -48,13 +48,13 @@ const Features = () => {
     },
     {
       icon: Trees,
-      title: 'Landscaped Yard',
-      description: 'Beautiful outdoor space with mature trees'
+      title: 'Large Fenced Yard',
+      description: 'Private outdoor space with a shed'
     },
     {
       icon: Shield,
       title: 'Safe Neighborhood',
-      description: 'Quiet residential area'
+      description: 'Quiet residential area close to downtown'
     },
     {
       icon: Sofa,
@@ -68,8 +68,8 @@ const Features = () => {
     },
     {
       icon: Sun,
-      title: 'Bright & Airy',
-      description: 'Large windows throughout'
+      title: 'Energy-Efficient Windows',
+      description: 'New windows to help save on energy costs'
     },
     {
       icon: Wind,
