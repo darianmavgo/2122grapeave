@@ -1,27 +1,31 @@
-# Deploying the Website to GitHub Pages
+# Deploying the Website to Cloudflare Pages
 
-This document provides instructions on how to build and deploy the website to GitHub Pages and configure your custom domain.
+This document provides instructions on how to build and deploy the website to Cloudflare Pages.
 
-## 1. Create a GitHub Repository
+## 1. Install Wrangler
 
-If you haven't already, create a new GitHub repository for this project.
+If you haven't already, install the Cloudflare Wrangler CLI:
 
-## 2. Configure GitHub Pages
+```bash
+npm install -g wrangler
+```
 
-This project is configured to automatically deploy to GitHub Pages using GitHub Actions. When you push to the `main` branch, the website will be automatically built and deployed.
+## 2. Login to Wrangler
 
-## 3. Configure Your Custom Domain
+Authenticate Wrangler with your Cloudflare account:
 
-1.  In your repository's **Settings** page, go to the **Pages** section.
-2.  Under **Custom domain**, enter `2122grapeave.mavgo.com` and click **Save**.
-3.  This will create a `CNAME` file in the root of your repository with the custom domain. This is handled automatically by the GitHub Actions workflow.
-4.  In your Squarespace account, go to the **DNS Settings** for your domain.
-5.  Create a `CNAME` record that points `2122grapeave` to `<your-github-username>.github.io`.
+```bash
+wrangler login
+```
+
+## 3. Configure Your Project
+
+This project is configured for Cloudflare Pages using the `wrangler.toml` file. It is set up to deploy the contents of the `.` directory, which is where the output of the build process is located.
 
 ## 4. Build and Deploy
 
-You can use the `deploy.sh` script to build and deploy the website to GitHub Pages.
+You can use the `npm run deploy` script to build and deploy the website to Cloudflare Pages.
 
 ```bash
-./deploy.sh
+npm run deploy
 ```
